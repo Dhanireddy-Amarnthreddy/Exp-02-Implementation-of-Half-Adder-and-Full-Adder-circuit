@@ -42,20 +42,23 @@ Developed by: D.Amarnath
 RegisterNumber:  212221240012
 */
 ### HALF ADDER
+```
 module exp3(a,b,sum,carry);
 input a,b;
 output sum,carry;
 xor(sum,a,b);
 and(carry,a,b);
 endmodule 
-
+```
 ### FULL ADDER
+```
 module exp3(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 assign sum = ((a^b)^c);
 assign carry = ((a&b)|(b&c)|(c&a));
 endmodule
+```
 ### Logic symbol & Truthtable RTL realization
 
 ### Output:
